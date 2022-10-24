@@ -1,7 +1,13 @@
 import React from "react";
 import profile from "../../assets/images/profile.jpg";
 
+import slack from "../../assets/images/slack.png";
 import share from "../../assets/images/share.png";
+import github from "../../assets/images/github.png";
+
+import zuri from "../../assets/images/zuri.png";
+
+import I4G from "../../assets/images/I4G.png";
 import { Div } from "./Home.style";
 const Home = () => {
   return (
@@ -9,7 +15,7 @@ const Home = () => {
       <img src={share} alt="" className="share-icon" />
       <div className="profile-container">
         <div className="img-containter">
-          <img src={profile} alt="" width={50} />
+          <img src={profile} alt="profile" width={50} />
         </div>
         <h4>Adeyemi Ab</h4>
       </div>
@@ -67,8 +73,23 @@ const Home = () => {
           Design Books
         </a>
       </div>
-      <div className="social-icon"></div>
-      <div className="footer"></div>
+      <div className="social-icon">
+        <img src={slack} alt="slack" />
+
+        <a
+          href="https://github.com/bimbo-ade"
+          rel="noopener noreferrer"
+          target="_blank"
+        >
+          <img src={github} alt="github" />
+        </a>
+      </div>
+      <hr />
+      <div className="footer">
+        <img src={zuri} alt="" width={140} />
+        <p> HNG Internship 9</p>
+        <img src={I4G} alt="" width={140} />
+      </div>
     </Div>
   );
 };

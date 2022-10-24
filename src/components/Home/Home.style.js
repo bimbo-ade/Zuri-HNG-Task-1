@@ -42,22 +42,47 @@ export const Div = styled.div`
     justify-content: center;
     align-items: center;
     text-align: center;
+
+    a {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 100%;
+      margin-top: 24px;
+      height: 56px;
+      box-sizing: border-box;
+      background-color: #eaecf0;
+      border: 1px solid #eaecf0;
+      border-radius: 8px;
+      font-weight: 600;
+      font-size: 18px;
+      line-height: 28px;
+      text-decoration: none;
+      color: #101828;
+    }
   }
-  a {
+  .social-icon {
     display: flex;
     align-items: center;
     justify-content: center;
-    width: 100%;
     margin-top: 24px;
+    width: 100%;
     height: 56px;
-    box-sizing: border-box;
-    background-color: #eaecf0;
-    border: 1px solid #eaecf0;
-    border-radius: 8px;
-    font-weight: 600;
-    font-size: 18px;
-    line-height: 28px;
-    text-decoration: none;
-    color: #101828;
+
+    margin-bottom: 64px;
+
+    img {
+      width: 24px;
+      height: 24px;
+      margin-left: 24px;
+    }
+  }
+  hr {
+    width: 100%;
+  }
+  .footer {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
   }
 `;
