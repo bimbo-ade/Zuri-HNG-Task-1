@@ -1,5 +1,6 @@
 import styled from "styled-components";
 
+import profile from "../../assets/images/profile.jpg";
 export const Div = styled.div`
   display: flex;
   flex-direction: column;
@@ -17,16 +18,53 @@ export const Div = styled.div`
     top: 50px;
   }
 
+  .profile-container {
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
   .img-containter {
+    background-image: url(${profile});
+    background-position: center;
+    background-size: cover;
+    width: 88px;
+    height: 88px;
+    border-radius: 50%;
+    margin-top: 64px;
+    position: relative;
+
     img {
-      width: 88px;
-      height: 88px;
-      border-radius: 50%;
-      margin-top: 64px;
+      position: absolute;
+      top: 35px;
+      left: 43px;
+      transform: translate(-50%, 50%);
+      z-index: 30;
+      display: none;
     }
   }
+  .content {
+    position: absolute;
+    background-color: rgba(0, 0, 0, 0.5);
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: none;
+    border-radius: 50%;
+    z-index: 1;
+  }
 
-  h4 {
+  .img-containter:hover .content,
+  img {
+    display: block;
+  }
+  .img-containter:hover img {
+    display: block;
+  }
+
+  p {
     margin-top: 24px;
     font-weight: 700;
     font-size: 20px;
@@ -59,6 +97,13 @@ export const Div = styled.div`
       line-height: 28px;
       text-decoration: none;
       color: #101828;
+      transition: 0.1s;
+      &:hover {
+        background: #d0d5dd;
+        border: 1px solid #d0d5dd;
+        box-shadow: 0px 1px 2px rgba(16, 24, 40, 0.05);
+        border-radius: 8px;
+      }
     }
   }
   .social-icon {
@@ -69,7 +114,7 @@ export const Div = styled.div`
     width: 100%;
     height: 56px;
 
-    margin-bottom: 64px;
+    margin-bottom: 120px;
 
     img {
       width: 24px;
@@ -77,12 +122,27 @@ export const Div = styled.div`
       margin-left: 24px;
     }
   }
-  hr {
-    width: 100%;
-  }
+
   .footer {
     display: flex;
     align-items: center;
+    border-top: 1px solid #eaecf0;
     justify-content: space-between;
+    width: 100%;
+    height: 86px;
+    background-color: white;
+
+    p {
+      width: 832.28px;
+      height: 24px;
+      font-style: normal;
+      font-weight: 400;
+      font-size: 16px;
+      line-height: 24px;
+
+      text-align: center;
+
+      color: #667085;
+    }
   }
 `;

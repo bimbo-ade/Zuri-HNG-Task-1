@@ -1,29 +1,34 @@
 import React from "react";
-import profile from "../../assets/images/profile.jpg";
-
 import slack from "../../assets/images/slack.png";
 import share from "../../assets/images/share.png";
 import github from "../../assets/images/github.png";
-
 import zuri from "../../assets/images/zuri.png";
-
 import I4G from "../../assets/images/I4G.png";
 import { Div } from "./Home.style";
+
 const Home = () => {
   return (
     <Div>
       <img src={share} alt="" className="share-icon" />
+
       <div className="profile-container">
         <div className="img-containter">
-          <img src={profile} alt="profile" width={50} />
+          <div className="content"></div>
+          <img src={share} alt="" width={28} />
         </div>
-        <h4>Adeyemi Ab</h4>
+
+        <p id="twitter">Adeyemi Ab</p>
+        <p id="slack" hidden>
+          Abimbola Adeyemi
+        </p>
       </div>
+
       <div className="link-container">
         <a
           href="https://twitter.com/_dami_sarah_"
           target="_blank"
           rel="noopener noreferrer"
+          id="twitter"
         >
           Twitter Link
         </a>
@@ -73,6 +78,7 @@ const Home = () => {
           Design Books
         </a>
       </div>
+
       <div className="social-icon">
         <img src={slack} alt="slack" />
 
@@ -84,11 +90,11 @@ const Home = () => {
           <img src={github} alt="github" />
         </a>
       </div>
-      <hr />
+
       <div className="footer">
-        <img src={zuri} alt="" width={140} />
-        <p> HNG Internship 9</p>
-        <img src={I4G} alt="" width={140} />
+        <img src={zuri} alt="zuri logo" width={135} />
+        <p> HNG Internship 9 Frontend Task</p>
+        <img src={I4G} alt="I4G logo" width={130} />
       </div>
     </Div>
   );
