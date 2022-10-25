@@ -1,5 +1,5 @@
 import styled from "styled-components";
-
+import { device } from "../../MediaQuery";
 import profile from "../../assets/images/profile.jpg";
 export const Div = styled.div`
   display: flex;
@@ -18,15 +18,30 @@ export const Div = styled.div`
     position: absolute;
     width: 40px;
     height: 40px;
-    right: 230px;
+    right: 120px;
     top: 50px;
     background-color: white;
     border: 1px dashed #d0d5dd;
     border-radius: 50%;
+    transition: 0.1s;
 
-    svg {
+    .svg1 {
       font-size: 24px;
       color: #98a2b3;
+      @media ${device.mobile} {
+        display: none;
+      }
+    }
+    .svg2 {
+      display: none;
+      @media ${device.mobile} {
+        display: block;
+      }
+    }
+
+    @media ${device.mobile} {
+      right: 0;
+      top: 50px;
     }
   }
   .tooltiptext {
@@ -34,7 +49,6 @@ export const Div = styled.div`
     position: absolute;
     top: 5px;
     right: 47px;
-    z-index: 1;
   }
   .cursor {
     visibility: hidden;
@@ -43,7 +57,6 @@ export const Div = styled.div`
     position: absolute;
     top: 25px;
     left: 30px;
-    z-index: 1;
   }
 
   .svg-cont:hover {
@@ -51,10 +64,16 @@ export const Div = styled.div`
   }
   .svg-cont:hover .tooltiptext {
     visibility: visible;
+    @media ${device.mobile} {
+      visibility: hidden;
+    }
   }
 
   .svg-cont:hover .cursor {
     visibility: visible;
+    @media ${device.mobile} {
+      visibility: hidden;
+    }
   }
 
   .profile-container {
@@ -114,6 +133,9 @@ export const Div = styled.div`
     line-height: 30px;
     text-align: center;
     color: #101828;
+    @media ${device.mobile} {
+      font-size: 18px;
+    }
   }
 
   .link-container {
@@ -123,6 +145,7 @@ export const Div = styled.div`
     justify-content: center;
     align-items: center;
     text-align: center;
+    // margin-bottom: 48px;
 
     a {
       display: flex;
@@ -147,6 +170,10 @@ export const Div = styled.div`
         box-shadow: 0px 1px 2px rgba(16, 24, 40, 0.05);
         border-radius: 8px;
       }
+      @media ${device.mobile} {
+        font-weight: 500;
+        font-size: 14px;
+      }
     }
   }
   .social-icon {
@@ -157,7 +184,7 @@ export const Div = styled.div`
     width: 100%;
     height: 56px;
 
-    margin-bottom: 120px;
+    margin-bottom: 70px;
 
     img {
       width: 24px;
@@ -172,7 +199,7 @@ export const Div = styled.div`
     border-top: 1px solid #eaecf0;
     justify-content: space-between;
     width: 100%;
-    height: 86px;
+    height: 90px;
     background-color: white;
 
     p {
@@ -182,10 +209,11 @@ export const Div = styled.div`
       font-weight: 400;
       font-size: 16px;
       line-height: 24px;
-
       text-align: center;
-
       color: #667085;
+    }
+    @media ${device.mobile} {
+      display: none;
     }
   }
 `;

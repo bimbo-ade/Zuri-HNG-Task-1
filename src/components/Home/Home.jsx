@@ -4,7 +4,7 @@ import github from "../../assets/images/github.png";
 import zuri from "../../assets/images/zuri.png";
 import I4G from "../../assets/images/I4G.png";
 import tooltip from "../../assets/images/tooltip.png";
-
+import { BsThreeDots } from "react-icons/bs";
 import cursor from "../../assets/images/cursor.png";
 import camera from "../../assets/images/camera.png";
 import { RiShareForwardLine } from "react-icons/ri";
@@ -14,7 +14,8 @@ const Home = () => {
   return (
     <Div>
       <div className="svg-cont">
-        <RiShareForwardLine />
+        <RiShareForwardLine className="svg1" />
+        <BsThreeDots className="svg2" />
         <span className="tooltiptext">
           {" "}
           <img src={tooltip} alt="" width={90} />
