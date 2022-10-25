@@ -10,12 +10,51 @@ export const Div = styled.div`
   width: 80%;
   margin: 0 auto 0;
 
-  .share-icon {
+  .svg-cont {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     position: absolute;
     width: 40px;
     height: 40px;
     right: 230px;
     top: 50px;
+    background-color: white;
+    border: 1px dashed #d0d5dd;
+    border-radius: 50%;
+
+    svg {
+      font-size: 24px;
+      color: #98a2b3;
+    }
+  }
+  .tooltiptext {
+    visibility: hidden;
+    position: absolute;
+    top: 5px;
+    right: 47px;
+    z-index: 1;
+  }
+  .cursor {
+    visibility: hidden;
+    text-align: center;
+    padding: 8px, 12px;
+    position: absolute;
+    top: 25px;
+    left: 30px;
+    z-index: 1;
+  }
+
+  .svg-cont:hover {
+    background-color: #f2f4f7;
+  }
+  .svg-cont:hover .tooltiptext {
+    visibility: visible;
+  }
+
+  .svg-cont:hover .cursor {
+    visibility: visible;
   }
 
   .profile-container {
@@ -37,7 +76,7 @@ export const Div = styled.div`
 
     img {
       position: absolute;
-      top: 35px;
+      top: 39px;
       left: 43px;
       transform: translate(-50%, 50%);
       z-index: 30;
@@ -46,7 +85,12 @@ export const Div = styled.div`
   }
   .content {
     position: absolute;
-    background-color: rgba(0, 0, 0, 0.5);
+    background: linear-gradient(
+        0deg,
+        rgba(52, 64, 84, 0.75),
+        rgba(52, 64, 84, 0.75)
+      ),
+      url(.jpg);
     top: 0;
     left: 0;
     width: 100%;
@@ -56,8 +100,7 @@ export const Div = styled.div`
     z-index: 1;
   }
 
-  .img-containter:hover .content,
-  img {
+  .img-containter:hover .content {
     display: block;
   }
   .img-containter:hover img {

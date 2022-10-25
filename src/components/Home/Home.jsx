@@ -1,20 +1,34 @@
 import React from "react";
 import slack from "../../assets/images/slack.png";
-import share from "../../assets/images/share.png";
 import github from "../../assets/images/github.png";
 import zuri from "../../assets/images/zuri.png";
 import I4G from "../../assets/images/I4G.png";
+import tooltip from "../../assets/images/tooltip.png";
+
+import cursor from "../../assets/images/cursor.png";
+import camera from "../../assets/images/camera.png";
+import { RiShareForwardLine } from "react-icons/ri";
 import { Div } from "./Home.style";
 
 const Home = () => {
   return (
     <Div>
-      <img src={share} alt="" className="share-icon" />
+      <div className="svg-cont">
+        <RiShareForwardLine />
+        <span className="tooltiptext">
+          {" "}
+          <img src={tooltip} alt="" width={90} />
+        </span>
+
+        <span className="cursor">
+          <img src={cursor} alt="" width={20} />
+        </span>
+      </div>
 
       <div className="profile-container">
         <div className="img-containter">
           <div className="content"></div>
-          <img src={share} alt="" width={28} />
+          <img src={camera} alt="" width={24} />
         </div>
 
         <p id="twitter">Adeyemi Ab</p>
