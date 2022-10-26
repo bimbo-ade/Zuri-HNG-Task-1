@@ -13,9 +13,10 @@ import { Div } from "./Home.style";
 const Home = () => {
   return (
     <Div>
-      <div className="svg-cont">
+      <div className="share-container" tabindex="1">
         <RiShareForwardLine className="svg1" />
         <BsThreeDots className="svg2" />
+
         <span className="tooltiptext">
           {" "}
           <img src={tooltip} alt="" width={90} />

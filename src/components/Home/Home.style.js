@@ -7,10 +7,10 @@ export const Div = styled.div`
   justify-content: center;
   align-items: center;
   position: relative;
-  width: 80%;
+  width: 90%;
   margin: 0 auto 0;
 
-  .svg-cont {
+  .share-container {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -23,17 +23,27 @@ export const Div = styled.div`
     background-color: white;
     border: 1px dashed #d0d5dd;
     border-radius: 50%;
+    cursor: pointer;
     transition: 0.1s;
+
+    &:hover {
+      background-color: #f2f4f7;
+    }
+    &:focus {
+      box-shadow: 0px 0px 0px 4px #f2f4f7;
+    }
 
     .svg1 {
       font-size: 24px;
       color: #98a2b3;
+
       @media ${device.mobile} {
         display: none;
       }
     }
     .svg2 {
       display: none;
+
       @media ${device.mobile} {
         display: block;
       }
@@ -44,12 +54,14 @@ export const Div = styled.div`
       top: 50px;
     }
   }
+
   .tooltiptext {
     visibility: hidden;
     position: absolute;
     top: 5px;
     right: 47px;
   }
+
   .cursor {
     visibility: hidden;
     text-align: center;
@@ -59,18 +71,17 @@ export const Div = styled.div`
     left: 30px;
   }
 
-  .svg-cont:hover {
-    background-color: #f2f4f7;
-  }
-  .svg-cont:hover .tooltiptext {
+  .share-container:hover .tooltiptext {
     visibility: visible;
+
     @media ${device.mobile} {
       visibility: hidden;
     }
   }
 
-  .svg-cont:hover .cursor {
+  .share-container:hover .cursor {
     visibility: visible;
+
     @media ${device.mobile} {
       visibility: hidden;
     }
@@ -83,6 +94,7 @@ export const Div = styled.div`
     justify-content: center;
     align-items: center;
   }
+
   .img-containter {
     background-image: url(${profile});
     background-position: center;
@@ -91,6 +103,7 @@ export const Div = styled.div`
     height: 88px;
     border-radius: 50%;
     margin-top: 64px;
+    cursor: pointer;
     position: relative;
 
     img {
@@ -133,6 +146,7 @@ export const Div = styled.div`
     line-height: 30px;
     text-align: center;
     color: #101828;
+
     @media ${device.mobile} {
       font-size: 18px;
     }
@@ -145,7 +159,6 @@ export const Div = styled.div`
     justify-content: center;
     align-items: center;
     text-align: center;
-    // margin-bottom: 48px;
 
     a {
       display: flex;
@@ -164,12 +177,24 @@ export const Div = styled.div`
       text-decoration: none;
       color: #101828;
       transition: 0.1s;
+
       &:hover {
         background: #d0d5dd;
         border: 1px solid #d0d5dd;
         box-shadow: 0px 1px 2px rgba(16, 24, 40, 0.05);
         border-radius: 8px;
       }
+      &:focus {
+        background: #eaecf0;
+        border: 1px solid #98a2b3;
+        box-shadow: 0px 1px 2px rgba(16, 24, 40, 0.05), 0px 0px 0px 2px #ebe9fe;
+      }
+      &:disabled {
+        background: #fcfcfd;
+        border: 1px solid #f2f4f7;
+        box-shadow: 0px 1px 2px rgba(16, 24, 40, 0.05);
+      }
+
       @media ${device.mobile} {
         font-weight: 500;
         font-size: 14px;
