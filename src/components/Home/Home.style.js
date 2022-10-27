@@ -1,6 +1,7 @@
 import styled from "styled-components";
 import { device } from "../../MediaQuery";
 import profile from "../../assets/images/profile.jpg";
+
 export const Div = styled.div`
   display: flex;
   flex-direction: column;
@@ -10,6 +11,11 @@ export const Div = styled.div`
   width: 90%;
   margin: 0 auto 0;
 
+  @media ${device.mobile} {
+    width: 95%;
+    margin: 0 auto 0;
+  }
+
   .share-container {
     display: flex;
     flex-direction: column;
@@ -18,8 +24,8 @@ export const Div = styled.div`
     position: absolute;
     width: 40px;
     height: 40px;
-    right: 120px;
-    top: 50px;
+    right: 20%;
+    top: 40px;
     background-color: white;
     border: 1px dashed #d0d5dd;
     border-radius: 50%;
@@ -166,12 +172,14 @@ export const Div = styled.div`
       justify-content: center;
       width: 100%;
       margin-top: 24px;
+
+      padding: 24px 32px;
       height: 56px;
       box-sizing: border-box;
       background-color: #eaecf0;
       border: 1px solid #eaecf0;
       border-radius: 8px;
-      font-weight: 600;
+      font-weight: 500;
       font-size: 18px;
       line-height: 28px;
       text-decoration: none;
@@ -209,7 +217,7 @@ export const Div = styled.div`
     width: 100%;
     height: 56px;
 
-    margin-bottom: 70px;
+    margin-bottom: 76px;
 
     img {
       width: 24px;
@@ -226,19 +234,28 @@ export const Div = styled.div`
     width: 100%;
     height: 90px;
     background-color: white;
-
+    img {
+      @media ${device.mobile} {
+        width: 120px;
+      }
+    }
     p {
-      width: 832.28px;
-      height: 24px;
       font-style: normal;
       font-weight: 400;
       font-size: 16px;
-      line-height: 24px;
-      text-align: center;
       color: #667085;
+
+      @media ${device.mobile} {
+        font-size: 14px;
+      }
     }
     @media ${device.mobile} {
-      display: none;
+      display: flex;
+      align-items: start;
+      flex-direction: column;
+      height: 90px;
+      justify-content: space-between;
+      padding: 32px 0;
     }
   }
 `;

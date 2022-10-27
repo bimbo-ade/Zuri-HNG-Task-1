@@ -68,7 +68,7 @@ const Home = () => {
         </a>
 
         <a
-          href="https://books.zuri.team/python-for-beginners?ref_id=<yourslackname>"
+          href="https://books.zuri.team/python-for-beginners?ref_id=<ab>"
           target="_blank"
           rel="noopener noreferrer"
           id="book__python"
