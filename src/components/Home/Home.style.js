@@ -183,7 +183,7 @@ export const Div = styled.div`
       line-height: 28px;
       text-decoration: none;
       color: #101828;
-      transition: 0.1s;
+      transition: 0.1s
 
       &:hover {
         background: #d0d5dd;
