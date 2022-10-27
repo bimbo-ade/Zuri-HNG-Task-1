@@ -108,9 +108,11 @@ const Home = () => {
       </div>
 
       <div className="footer">
-        <img src={zuri} alt="zuri logo" width={135} />
-        <p> HNG Internship 9 Frontend Task</p>
-        <img src={I4G} alt="I4G logo" width={130} />
+        <div className="footer-content-container">
+          <img src={zuri} alt="zuri logo" width={135} />
+          <p> HNG Internship 9 Frontend Task</p>
+          <img src={I4G} alt="I4G logo" width={130} />
+        </div>
       </div>
     </Div>
   );

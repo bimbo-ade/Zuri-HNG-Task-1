@@ -8,7 +8,7 @@ export const Div = styled.div`
   justify-content: center;
   align-items: center;
   position: relative;
-  width: 90%;
+  width: 80%;
   margin: 0 auto 0;
 
   @media ${device.mobile} {
@@ -172,9 +172,8 @@ export const Div = styled.div`
       justify-content: center;
       width: 100%;
       margin-top: 24px;
-
       padding: 24px 32px;
-      height: 56px;
+      height: 64px;
       box-sizing: border-box;
       background-color: #eaecf0;
       border: 1px solid #eaecf0;
@@ -215,8 +214,8 @@ export const Div = styled.div`
     justify-content: center;
     margin-top: 24px;
     width: 100%;
-    height: 56px;
-    margin-bottom: 76px;
+    height: 72px;
+    margin-bottom: 64px;
 
     img {
       width: 24px;
@@ -228,11 +227,27 @@ export const Div = styled.div`
   .footer {
     display: flex;
     align-items: center;
-    border-top: 1px solid #eaecf0;
-    justify-content: space-between;
+    justify-content: center;
     width: 100%;
-    height: 90px;
-    background-color: white;
+    height: 160px;
+
+    .footer-content-container {
+      display: flex;
+      align-items: center;
+      border-top: 1px solid #eaecf0;
+      justify-content: space-between;
+      height: 64px;
+      width: 100%;
+
+      @media ${device.mobile} {
+        display: flex;
+        align-items: start;
+        flex-direction: column;
+        height: 90px;
+        justify-content: space-between;
+        padding: 32px 0;
+      }
+    }
     img {
       @media ${device.mobile} {
         width: 120px;
@@ -247,14 +262,6 @@ export const Div = styled.div`
       @media ${device.mobile} {
         font-size: 14px;
       }
-    }
-    @media ${device.mobile} {
-      display: flex;
-      align-items: start;
-      flex-direction: column;
-      height: 90px;
-      justify-content: space-between;
-      padding: 32px 0;
     }
   }
 `;
