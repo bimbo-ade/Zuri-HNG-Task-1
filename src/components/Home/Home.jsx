@@ -35,7 +35,7 @@ const Home = () => {
 
         <p id="twitter">damisayrah_</p>
         <p id="slack" hidden>
-          Ab
+          dami_sayrah
         </p>
       </div>
 
@@ -68,7 +68,7 @@ const Home = () => {
         </a>
 
         <a
-          href="https://books.zuri.team/python-for-beginners?ref_id=<Ab>"
+          href="https://books.zuri.team/python-for-beginners?ref_id=<dami_sayrah>"
           target="_blank"
           rel="noopener noreferrer"
           id="book__python"
