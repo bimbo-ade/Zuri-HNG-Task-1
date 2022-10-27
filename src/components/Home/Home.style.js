@@ -62,14 +62,14 @@ export const Div = styled.div`
   }
 
   .tooltiptext {
-    visibility: hidden;
+    display: none;
     position: absolute;
     top: 5px;
     right: 47px;
   }
 
   .cursor {
-    visibility: hidden;
+    display: none;
     text-align: center;
     padding: 8px, 12px;
     position: absolute;
@@ -78,18 +78,18 @@ export const Div = styled.div`
   }
 
   .share-container:hover .tooltiptext {
-    visibility: visible;
+    display: block;
 
     @media ${device.mobile} {
-      visibility: hidden;
+      display: none;
     }
   }
 
   .share-container:hover .cursor {
-    visibility: visible;
+    display: block;
 
     @media ${device.mobile} {
-      visibility: hidden;
+      display: none;
     }
   }
 
@@ -222,7 +222,7 @@ export const Div = styled.div`
     img {
       width: 24px;
       height: 24px;
-      margin-left: 24px;
+      padding: 24px;
     }
   }
 

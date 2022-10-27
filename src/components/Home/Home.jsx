@@ -33,7 +33,7 @@ const Home = () => {
           <img src={camera} alt="" width={24} />
         </div>
 
-        <p id="twitter">Adeyemi Ab</p>
+        <p id="twitter">damisayrah_</p>
         <p id="slack" hidden>
           Abimbola Adeyemi
         </p>
@@ -41,7 +41,7 @@ const Home = () => {
 
       <div className="link-container">
         <a
-          href="https://twitter.com/_dami_sarah_"
+          href="https://twitter.com/damisayrah_"
           target="_blank"
           rel="noopener noreferrer"
           id="twitter"
