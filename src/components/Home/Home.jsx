@@ -19,23 +19,23 @@ const Home = () => {
 
         <span className="tooltiptext">
           {" "}
-          <img src={tooltip} alt="" width={90} />
+          <img src={tooltip} alt="tooltip" width={90} />
         </span>
 
         <span className="cursor">
-          <img src={cursor} alt="" width={20} />
+          <img src={cursor} alt="cursor" width={20} />
         </span>
       </div>
 
       <div className="profile-container">
         <div className="img-containter">
           <div className="content"></div>
-          <img src={camera} alt="" width={24} />
+          <img src={camera} alt="profile" width={24} id="profile__img" />
         </div>
 
         <p id="twitter">damisayrah_</p>
         <p id="slack" hidden>
-          Abimbola Adeyemi
+          Ab
         </p>
       </div>
 
@@ -68,7 +68,7 @@ const Home = () => {
         </a>
 
         <a
-          href="https://books.zuri.team/python-for-beginners?ref_id=<ab>"
+          href="https://books.zuri.team/python-for-beginners?ref_id=<Ab>"
           target="_blank"
           rel="noopener noreferrer"
           id="book__python"

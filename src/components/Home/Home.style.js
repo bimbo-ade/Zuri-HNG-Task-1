@@ -216,13 +216,12 @@ export const Div = styled.div`
     margin-top: 24px;
     width: 100%;
     height: 56px;
-
     margin-bottom: 76px;
 
     img {
       width: 24px;
       height: 24px;
-      padding: 24px;
+      padding: 16px;
     }
   }
 
