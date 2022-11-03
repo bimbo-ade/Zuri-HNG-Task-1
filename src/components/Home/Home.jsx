@@ -1,8 +1,6 @@
 import React from "react";
 import slack from "../../assets/images/slack.png";
 import github from "../../assets/images/github.png";
-import zuri from "../../assets/images/zuri.png";
-import I4G from "../../assets/images/I4G.png";
 import tooltip from "../../assets/images/tooltip.png";
 import { BsThreeDots } from "react-icons/bs";
 import cursor from "../../assets/images/cursor.png";
@@ -105,14 +103,6 @@ const Home = () => {
         >
           <img src={github} alt="github" />
         </a>
-      </div>
-
-      <div className="footer">
-        <div className="footer-content-container">
-          <img src={zuri} alt="zuri logo" width={135} />
-          <p> HNG Internship 9 Frontend Task</p>
-          <img src={I4G} alt="I4G logo" width={130} />
-        </div>
       </div>
     </Div>
   );
