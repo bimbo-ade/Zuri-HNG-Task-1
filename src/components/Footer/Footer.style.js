@@ -3,7 +3,7 @@ import styled from "styled-components";
 import { device } from "../../MediaQuery";
 export const Div = styled.div`
 
-width: 80%;
+width: 90%;
 margin: 0 auto 0;
 .footer {
     display: flex;
