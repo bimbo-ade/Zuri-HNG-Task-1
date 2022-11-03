@@ -7,6 +7,7 @@ import cursor from "../../assets/images/cursor.png";
 import camera from "../../assets/images/camera.png";
 import { RiShareForwardLine } from "react-icons/ri";
 import { Div } from "./Home.style";
+import { NavLink } from "react-router-dom";
 
 const Home = () => {
   return (
@@ -91,6 +92,10 @@ const Home = () => {
         >
           Design Books
         </a>
+
+        <NavLink to="/contact" id="contact">
+          Contact
+        </NavLink>
       </div>
 
       <div className="social-icon">
