@@ -1,6 +1,6 @@
 import React from "react";
 import "./Contact.style";
-import { ImCheckboxUnchecked } from "react-icons/im";
+import { BiCheckbox } from "react-icons/bi";
 import { Div } from "./Contact.style";
 const Contact = () => {
   return (
@@ -47,7 +47,7 @@ const Contact = () => {
           </div>
         </div>
         <div className="check">
-          <ImCheckboxUnchecked tabIndex={1} />
+          <BiCheckbox tabIndex={-1} />
           <p>
             You agree to providing your data to damisayrah_ who may contact you.
           </p>

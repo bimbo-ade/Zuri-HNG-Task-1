@@ -150,20 +150,11 @@ export const Div = styled.div`
     margin-bottom: 32px;
 
     svg {
-      box-sizing: border-box;
       cursor: pointer;
       color: #d0d5dd;
-      width: 20px;
-      height: 20px;
-      background: #f2f4f7;
-      outline: none;
+      font-size: 24px;
 
-      &:focus {
-        background: #ffffff;
-        border-radius: 6px;
-        border: 1px solid #84caff;
-        box-shadow: 0px 0px 0px 4px #d1e9ff;
-      }
+      outline: none;
     }
 
     p {
