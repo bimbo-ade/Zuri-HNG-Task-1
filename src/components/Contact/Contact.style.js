@@ -47,6 +47,8 @@ export const Div = styled.div`
     font-weight: 400;
     font-size: 16px;
     color: #101828;
+    font-style: normal;
+
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -67,10 +69,6 @@ export const Div = styled.div`
     }
 
     &::placeholder {
-      font-style: normal;
-      font-weight: 400;
-      font-size: 16px;
-      line-height: 24px;
       color: #667085;
     }
   }
@@ -111,6 +109,7 @@ export const Div = styled.div`
       font-weight: 400;
       font-size: 16px;
       color: #101828;
+      line-height: 24px;
       box-sizing: border-box;
       display: flex;
       flex-direction: row;
@@ -130,11 +129,17 @@ export const Div = styled.div`
         box-shadow: 0px 1px 2px rgba(16, 24, 40, 0.05), 0px 0px 0px 4px #d1e9ff;
       }
       &::placeholder {
-        font-weight: 400;
-        font-size: 16px;
-        line-height: 24px;
         color: #667085;
       }
+    }
+    .error {
+      font-weight: 400;
+      font-size: 14px;
+      line-height: 20px;
+      color: red;
+    }
+    &:hover .error {
+      display: none;
     }
   }
 
@@ -142,7 +147,6 @@ export const Div = styled.div`
     display: flex;
     align-items: center;
     width: 100%;
-    margin-top: 24px;
     margin-bottom: 32px;
 
     svg {

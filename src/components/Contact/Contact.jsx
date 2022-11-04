@@ -42,6 +42,8 @@ const Contact = () => {
               placeholder="Send me a message and I'll reply you as soon as possible..."
               id="message"
             />
+
+            <p className="error">please enter a message</p>
           </div>
         </div>
         <div className="check">
