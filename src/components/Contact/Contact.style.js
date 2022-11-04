@@ -44,6 +44,9 @@ export const Div = styled.div`
   input {
     box-sizing: border-box;
     outline: none;
+    font-weight: 400;
+    font-size: 16px;
+    color: #101828;
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -105,6 +108,9 @@ export const Div = styled.div`
 
     textarea {
       outline: none;
+      font-weight: 400;
+      font-size: 16px;
+      color: #101828;
       box-sizing: border-box;
       display: flex;
       flex-direction: row;
@@ -174,10 +180,15 @@ export const Div = styled.div`
     height: 48px;
     background: #1570ef;
     border: 1px solid #1570ef;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 24px;
+    color: #ffffff;
     box-shadow: 0px 1px 2px rgba(16, 24, 40, 0.05);
     border-radius: 8px;
     cursor: pointer;
     margin-bottom: 64px;
+
     &:focus {
       background: #1570ef;
       border: 1px solid #1570ef;
