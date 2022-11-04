@@ -15,33 +15,42 @@ const Contact = () => {
           <div className="username">
             <div className="first-name">
               <label>First Name</label>
-              <input type="text" placeholder="Enter your first name" />
+              <input
+                type="text"
+                placeholder="Enter your first name"
+                id="first_name"
+              />
             </div>
             <div className="last-name">
               <label>Last Name</label>
-              <input type="text" placeholder="Enter your Last name" />
+              <input
+                type="text"
+                placeholder="Enter your Last name"
+                id="last_name"
+              />
             </div>
           </div>
 
           <div className="email">
             <label>Email</label>
-            <input type="email" placeholder="yourname@gmail.com" />
+            <input type="email" placeholder="yourname@gmail.com" id="email" />
           </div>
           <div className="message">
             <label>Message</label>
             <textarea
               type="text"
               placeholder="Send me a message and I'll reply you as soon as possible..."
+              id="message"
             />
           </div>
         </div>
         <div className="check">
-          <ImCheckboxUnchecked />
+          <ImCheckboxUnchecked tabIndex={1} />
           <p>
             You agree to providing your data to damisayrah_ who may contact you.
           </p>
         </div>
-        <button>Send Message</button>
+        <button id="btn__submit">Send Message</button>
       </Div>
     </>
   );
