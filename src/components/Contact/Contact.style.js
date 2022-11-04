@@ -1,5 +1,6 @@
 import styled from "styled-components";
 
+import { device } from "../../MediaQuery";
 export const Div = styled.div`
   width: 54%;
   margin: 4rem auto;
@@ -7,6 +8,10 @@ export const Div = styled.div`
   flex-direction: column;
   justify-content: center;
 
+  @media ${device.mobile} {
+    width: 90%;
+    margin: 0 auto 0;
+  }
   .contact-header {
     h2 {
       font-weight: 600;
@@ -14,12 +19,20 @@ export const Div = styled.div`
       line-height: 44px;
       letter-spacing: -0.02em;
       color: #101828;
+
+      @media ${device.mobile} {
+        margin-top: 64px;
+      }
     }
     p {
       font-weight: 400;
       font-size: 20px;
       line-height: 30px;
       color: #475467;
+      @media ${device.mobile} {
+        font-size: 18px;
+        line-height: 28px;
+      }
     }
   }
 
@@ -65,6 +78,9 @@ export const Div = styled.div`
 
   .username {
     display: flex;
+    @media ${device.mobile} {
+      flex-direction: column;
+    }
   }
 
   .first-name,
@@ -118,11 +134,11 @@ export const Div = styled.div`
 
   .check {
     display: flex;
-    justify-content: center;
     align-items: center;
     width: 100%;
     margin-top: 24px;
     margin-bottom: 32px;
+
     svg {
       box-sizing: border-box;
       cursor: pointer;
@@ -131,6 +147,7 @@ export const Div = styled.div`
       height: 20px;
       background: #f2f4f7;
       outline: none;
+
       &:focus {
         background: #ffffff;
         border-radius: 6px;
@@ -160,6 +177,7 @@ export const Div = styled.div`
     box-shadow: 0px 1px 2px rgba(16, 24, 40, 0.05);
     border-radius: 8px;
     cursor: pointer;
+    margin-bottom: 64px;
     &:focus {
       background: #1570ef;
       border: 1px solid #1570ef;
