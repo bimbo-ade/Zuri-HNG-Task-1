@@ -1,7 +1,6 @@
 import React from "react";
 import "./Contact.style";
 import check from "../../assets/images/check.png";
-import { BiCheckbox } from "react-icons/bi";
 import { Div } from "./Contact.style";
 const Contact = () => {
   return (
