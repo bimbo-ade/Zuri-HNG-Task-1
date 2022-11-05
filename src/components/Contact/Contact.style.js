@@ -149,17 +149,23 @@ export const Div = styled.div`
     width: 100%;
     margin-bottom: 32px;
 
-    svg {
-      cursor: pointer;
-      color: #d0d5dd;
-      font-size: 24px;
+    .check-icon {
+      box-sizing: border-box;
 
-      outline: none;
+      width: 20px;
+      height: 20px;
+      background: #ffffff;
+      cursor: pointer;
+      border: 1px solid #d0d5dd;
+      border-radius: 6px;
+      &:focus {
+        border: 1px solid #84caff;
+        box-shadow: 0px 0px 0px 4px #d1e9ff;
+        border-radius: 6px;
+      }
     }
 
     p {
-      font-family: "Inter";
-      font-style: normal;
       font-weight: 400;
       font-size: 14px;
       line-height: 24px;
