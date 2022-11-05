@@ -1,5 +1,7 @@
 import React from "react";
 import "./Contact.style";
+import check from "../../assets/images/check.png";
+import { BiCheckbox } from "react-icons/bi";
 import { Div } from "./Contact.style";
 const Contact = () => {
   return (
@@ -46,7 +48,8 @@ const Contact = () => {
           </div>
         </div>
         <div className="check">
-          <div className="check-icon " tabIndex={-1}></div>
+          <img src={check} alt="check" className="check-icon" tabIndex={-1} />
+
           <p>
             You agree to providing your data to damisayrah_ who may contact you.
           </p>

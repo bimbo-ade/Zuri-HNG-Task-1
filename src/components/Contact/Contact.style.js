@@ -150,8 +150,6 @@ export const Div = styled.div`
     margin-bottom: 32px;
 
     .check-icon {
-      box-sizing: border-box;
-
       width: 20px;
       height: 20px;
       background: #ffffff;
